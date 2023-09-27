@@ -1,6 +1,7 @@
 import React from 'react';
 import App from '../App';
 import ItemListContainer from './ItemListContainer';
+import { Link } from 'react-router-dom';
 
 
 //creacion del div del centro links clickleabes
@@ -9,11 +10,11 @@ const LinksExploration = ({text}) =>{
         <div className='links'>
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Hombre</a>
-                    <a href="#">Mujer</a>
-                    <a href="#">Ayuda</a>
+                    <Link to="/">Inicio</Link>
+                    <Link to="/">Productos</Link>
+                    <Link to="/productos/hombre">Hombre</Link>
+                    <Link to="/productos/mujer">Mujer</Link>
+                    <Link to="/">Ayuda</Link>
                 </li>
             </ul>
         </div>
@@ -40,7 +41,7 @@ const CartWidget = ()=>{
 function NavBar() {
     return (
     <nav className='navbar'>
-        <img src="/src/assets/adidas.png" alt="Logo" />
+        <Link href="/"><img src="/src/assets/adidas.png" alt="Logo" /></Link>
         <LinksExploration/>
         <CartWidget/>
     </nav>

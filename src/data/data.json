@@ -62,7 +62,7 @@
         "categoria": "buzos",
         "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     },
     {
         "id": 8,
@@ -71,7 +71,7 @@
         "categoria": "pantalones",
         "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     },
     {
         "id": 9,
@@ -80,7 +80,7 @@
         "categoria": "pantalones",
         "imagen": "http://dummyimage.com/200x100.png/ff4444/ffffff",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     },
     {
         "id": 10,
@@ -143,7 +143,7 @@
         "categoria": "medias",
         "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     },
     {
         "id": 17,
@@ -161,7 +161,7 @@
         "categoria": "pantalones",
         "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     },
     {
         "id": 19,
@@ -179,6 +179,6 @@
         "categoria": "buzos",
         "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
         "precio": 1500,
-        "genero":"Mujer"
+        "genero":"mujer"
     }
 ]

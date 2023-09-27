@@ -1,29 +1,36 @@
 import React, { useEffect,useState } from "react"
 import { pedirId } from '../data/pedirDatos';
+import { useParams } from "react-router-dom";
 
 
-const ItemDetailContainer = ({itemId}) =>{
-
+const ItemDetailContainer = () =>{
+    
     const[item,setItem] = useState(null)
-    console.log(item)
+    
+    const id = useParams().id
+
+
     useEffect(() =>{
         //ejecuto la funcion para comparar por id que esta en pedirDatos.js
-        pedirId(itemId)
+        pedirId(Number(id))
         .then((res) =>{
             setItem(res)
         })
-    })
+    },[id])
 
 
     return(
         
         <div className="container">
             { item &&
-            <div className="producto">
+            <div className="cardProduct">
                 <h2>{item.titulo}</h2>
                 <img src={item.imagen} alt="" />
-                <p>Precio ${item.precio}</p>
-                <p>{item.descripcion}</p>
+                <div className="cardInfo">
+                    <p className="descripcion">{item.descripcion}</p>
+                    <p className="precio">Precio ${item.precio}</p>
+                    
+                </div>
             </div>    
             }
         </div>
