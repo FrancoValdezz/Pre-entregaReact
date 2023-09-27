@@ -62,7 +62,14 @@
 
 /* ItemListContainer */
 .item-list-container{
-    width: 500px;
+    width: 90%;
     margin: auto;
     text-align: center;
+}
+
+.item-list-container .productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-block: 2rem
 }

@@ -1,4 +1,8 @@
 import React from 'react';
+import App from '../App';
+import ItemListContainer from './ItemListContainer';
+
+
 //creacion del div del centro links clickleabes
 const LinksExploration = ({text}) =>{
     return(
@@ -15,18 +19,22 @@ const LinksExploration = ({text}) =>{
         </div>
     )
 }
+
+
 //mi div cartwidget 
 const CartWidget = ()=>{
-    const contadorCarrito = 3;
-
+    
     return (
+        
         <div className="cart-widget">
             <i class="fa-regular fa-user"></i>
             <i className="fas fa-shopping-cart"></i> {/* Ícono del carrito */}
-            <span className="numero-carrito">{contadorCarrito}</span> {/* Notificación */}
+            <span className="numero-carrito">0</span> 
+            
         </div>
 );
 }
+
 
 
 function NavBar() {
