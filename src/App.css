@@ -258,6 +258,13 @@ cuando hago el estilo de itemDetailContainer*/
     
 }
 
+.container .detailProducto .actions a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
 .container .detailProducto .actions button{
     background-color: black;
     border: none;
@@ -267,4 +274,8 @@ cuando hago el estilo de itemDetailContainer*/
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+.noProducts{
+    font-size: 25px;
 }

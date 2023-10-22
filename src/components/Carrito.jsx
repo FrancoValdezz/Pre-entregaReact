@@ -19,10 +19,11 @@ const Carrito = () => {
 
     return (
     <div className='container'>
-        <h1>carrito</h1>
+        <h1>Carrito</h1>
         {
             carrito.map((prod)=>(
                 <div className='detailProducto' key={prod.id}>
+
                     <h2>{prod.titulo}</h2>
                     <p>Precio producto:{prod.precio}</p>
                     <p>Precio total: {prod.precio * prod.cantidad}</p>
@@ -45,7 +46,7 @@ const Carrito = () => {
                     
                 </>
             : /* Aca se ejecuta cuando monta cuando esta vacio */
-                <div>
+                <div className='noProducts'>
                     
                     <h2>Todavia no has realizado ningua compra</h2>
                     <p>Ve a <Link to="/">Inicio</Link> para asi completar tu compra</p>
